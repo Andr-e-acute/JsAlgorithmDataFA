@@ -9,14 +9,20 @@ function validAnagram(str1, str2) {
     charCounter1[char] = (charCounter1[char] ?? 0) + 1;
   }
   for (const char of str2) {
-    charCounter2[char] = (charCounter2[char] ?? 0) + 1;
-  }
-  for (let letter in charCounter1) {
-    if (charCounter2[letter] !== charCounter1[letter]) {
+    if (!charCounter1[char]) {
       return false;
+    } else {
+      charCounter1[char]--;
     }
+    return true;
+    // charCounter2[char] = (charCounter2[char] ?? 0) + 1;
   }
-  return true;
+  // for (let letter in charCounter1) {
+  //   if (charCounter2[letter] !== charCounter1[letter]) {
+  //     return false;
+  //   }
+  // }
+  // return true;
 }
 // !! when running in the udemy need to change
 // console.log(validAnagram("", "")); // true
