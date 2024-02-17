@@ -20,6 +20,7 @@ function countUniqueValues(arr) {
     }
   }
   console.log("count:" + count);
+  return count;
 }
 
 // countUniqueValues([1, 1, 1, 1, 1, 2]); // 2
