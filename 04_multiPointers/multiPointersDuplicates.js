@@ -1,3 +1,4 @@
+// used frequency pattern
 function areThereDuplicates(...arr) {
   const counter = {};
   for (const element of arr) {
