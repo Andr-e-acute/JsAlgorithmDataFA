@@ -8,9 +8,8 @@ function areThereDuplicates(...arr) {
     }
   }
   return false;
-  // good luck. (supply any arguments you deem necessary.)
 }
-console.log(areThereDuplicates(1, 2, 3)); // false
+console.log(areThereDuplicates(1, 2, 3)); // fals
 console.log(areThereDuplicates(1, 2, 2)); // true
 console.log(areThereDuplicates("a", "b", "c", "a")); // true
 
